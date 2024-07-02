@@ -1,0 +1,1046 @@
+
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="../../assets/img/Logo-Oficial.png" alt="">
+      <!-- <h1 class="sitename">LOGO DE LA EMPRESA</h1><span>.</span> -->
+
+
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#inicio" class="">Inicio</a></li>
+        <li><a href="/quienes-somos" class="">Quienes somos</a></li>
+        <!-- <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li> -->
+        <!-- <li><a href="#portfolio">Productos</a></li> -->
+        <!-- <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="blog.html">Blog</a></li> -->
+        <li class="dropdown has-dropdown"><a href="#portfolio"><span>Productos</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown has-dropdown"><a href=""><span>Equipos</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li ><a href="/detalles?nombre=Equipo de presion constante">De presion constante</a></li> 
+                <li><a href="/detalles?nombre=Equipos contraincendios UL/FM">Contraincendios UL/FM</a></li>
+                <li><a href="/construccion?nombre=Equipos de construción">De construción</a></li>
+              </ul>
+            </li>
+            <li class="dropdown has-dropdown"><a href="#"><span>Diseño y fabricación</span> <i
+                  class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Redes contraincendios</a></li>
+              </ul>
+            </li>
+            <li><a href="/detalles?nombre=Plantas electricas">Plantas electricas</a></li>
+            
+
+          </ul>
+        </li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <!-- <a class="btn-getstarted" href="index.html#about">Empezar</a> -->
+
+
+  </div>
+</header>
+<main class="main">
+
+
+  <!-- Redes -->
+  <div>
+    <a>
+      <button class="boton-flotante" (click)="sendWhatsapp()">
+        <i class="bi bi-whatsapp"></i>
+      </button>
+    </a>
+
+  </div>
+
+
+  <section id="inicio" class="hero section">
+
+    <img src="../assets/img/banner.jpg" alt="" data-aos="fade-in">
+     
+      <!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="../../assets/img/video.mp4" type="video/mp4">
+      </video> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <h2 data-aos="fade-up" data-aos-delay="100">Bienvenido a nuestro sitio web</h2>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <br>
+  <br>
+
+  <!-- Clients Section -->
+  <!-- <section id="clients" class="clients section">
+  
+      <div class="container section-title" data-aos="fade-up">
+        <h2>MARCAS ALIADAS</h2>
+      </div>
+      <div class="container" data-aos="fade-up">
+  
+        <div class="row gy-4">
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/nfpa-logo.png" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/barnes.png" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Mitsubishi_Electric_logo.svg.png" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Honda.svg.png" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/principal-wdm.png" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Makita.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Makita.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Makita.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Makita.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="../assets/img/Makita.png" class="img-fluid" alt="">
+          </div>
+  
+        </div>
+  
+      </div>
+      
+    </section> -->
+
+
+  <section>
+    <div class="container section-title" >
+      <h2 >Nuestras marcas aliadas</h2>
+    </div>
+
+    <div class="container swiper">
+      <swiper [config]="config">
+        <ng-template swiperSlide *ngFor="let slide of slides">
+          <img [src]="slide.image" alt="foto" />
+        </ng-template>
+      </swiper>
+    </div>
+  </section>
+
+
+
+
+
+
+  <br>
+  <br>
+
+  <!-- About Section -->
+  <!-- <section id="about" class="about section">
+  
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+  
+          <div class="col-xl-5 content">
+            <h3>About Us</h3>
+            <h2>Ducimus rerum libero reprehenderit cumque</h2>
+            <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+  
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+  
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>Eius provident</h3>
+                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                </div>
+              </div> 
+  
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3>Rerum aperiam</h3>
+                  <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
+                </div>
+              </div> 
+  
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>Veniam omnis</h3>
+                  <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
+                </div>
+              </div> 
+  
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Delares sapiente</h3>
+                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
+                </div>
+              </div> 
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section> -->
+
+  <!-- Stats Section -->
+
+
+  <!-- Services Section -->
+  <!-- <section id="services" class="services section">
+  
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+  
+      <div class="container">
+  
+        <div class="row gy-4">
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Dolor Sitema</a></h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Magni Dolores</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Nemo Enim</a></h4>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section> -->
+
+  <!-- Features Section -->
+
+
+  <!-- Portfolio Section -->
+  <section id="call-to-action" class="call-to-action section">
+
+    <img src="../assets/img/plantas-electricas.jpeg" alt="">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="text-center">
+            <div class="container section-title" >
+              <h2 style="color: white;">Nuestros productos</h2>
+              <p>(Muestras digitales)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="portfolio" class="portfolio section">
+
+    <div class="container">
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <div class="row gy-4 isotope-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="../assets/img/PRESION-AQUA.png" class="img-fluid" alt="" (click)="detalle('Equipo de presion constante')">
+            <div class="portfolio-info">
+              <h4>Equipos de presion constante</h4>
+              <!-- <p>Lorem ipsum, dolor sit</p> -->
+              <a href="../assets/img/PRESION-AQUA.png" title="App 1" data-gallery="portfolio-gallery-app"
+              class="glightbox preview-link"></a>
+              <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="../assets/img/Planta-electrica.png" class="img-fluid" alt="" (click)="detalle('Plantas electricas')">
+            <div class="portfolio-info">
+              <h4>Plantas electricas</h4>
+              <!-- <p>Lorem ipsum, dolor sit</p> -->
+              <a href="../assets/img/Planta-electrica.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+              <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="../assets/img/suction_diesel.jpg" class="img-fluid" alt="" (click)="detalle('Equipos contraincendios UL/FM')">
+            <div class="portfolio-info">
+              <h4>Equipos contraincendios UL/FM</h4>
+              <!-- <p>Lorem ipsum, dolor sit</p> -->
+              <a href="../assets/img/suction_diesel.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="../assets/img/redes-contra-incendios.png" class="img-fluid" alt="" (click)="detalle('Diseño e instalación de redes contraincendios')">
+            <div class="portfolio-info">
+              <h4>Diseño e instalación de redes contraincendios</h4>
+              <p>redes hidráulicas y sanitarias</p>
+              <a href="../assets/img/redes-contra-incendios.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <!-- <i class="bi bi-zoom-in"></i> -->
+              <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="../assets/img/planta_potabilizadora.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Diseño y fabricación</h4>
+              <p>De sistemas de potabilización de agua y tratamiento de aguas residuales</p>
+              <a href="../assets/img/planta_potabilizadora.jpg" title="Product 2"
+              data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+              </div>
+              </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img  src="../assets/img/Maquinaria.png" class="img-fluid" alt=""  (click)="construccion('Equipos de construción')">
+            <div class="portfolio-info">
+              <h4>Equipos de construción</h4>
+              <!-- <p>Lorem ipsum, dolor sit</p> -->
+              <a href="../assets/img/Maquinaria.png" title="Branding 2"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+              <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Section -->
+
+  <!-- Pricing Section -->
+  <!-- <section id="pricing" class="pricing section">
+  
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+  
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+  
+        <div class="row g-4">
+  
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
+              </div>
+  
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section> -->
+
+  <!-- Faq Section -->
+
+
+
+  
+ 
+      
+    
+
+  <!-- Call To Action Section -->
+
+
+  <section id="stats" class="stats section call-to-action section">
+    <div class="container section-title clientes">
+      <!-- <h2 style="color: white;"></h2> -->
+    </div>
+  
+    <img src="assets/img/plantas-electricas.jpeg" alt="" data-aos="fade-in">
+
+    <div class="container position-relative" >
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clientes</p>
+          </div>
+          
+        </div>
+        
+        
+        <div class="col-lg-6 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Proyectos</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+  </section>
+  <section id="team" class="team section">
+
+    <div class="container section-title">
+      <h2>Clientes que confiaron en nosotros</h2>
+    </div> 
+  
+    <div class="container">
+  
+      <div class="row gy-5">
+  
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/BERLIN.png" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://web.facebook.com/constructoraberlin/?locale=es_LA&_rdc=1&_rdr"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/constructoraberlin/"><i class="bi bi-instagram"></i></a>          
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Constructora BERLIN</h4>
+          </div>
+        </div>  
+  
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/JyP.png" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://www.facebook.com/ConstructoraJyP/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/constructorajyp/"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>JyP Constructora</h4>
+          </div>
+        </div>  
+
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/cfc.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://www.facebook.com/cfcyaconstrucciones/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/cfcya_construcciones/?hl=es-la"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>CFC&A Constructora</h4>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/galias.png" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://www.facebook.com/ConstructoralasGalias/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/lasgaliasc/?hl=es"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Las Galias Constructora</h4>
+          </div>
+        </div>  
+
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/palo1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://www.facebook.com/PaloDeAguaConstructora/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/constructorapalodeagua/?hl=es"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Palo de Agua Constructora</h4>           
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 member">
+          <div class="member-img img-clientes">
+            <img src="../../assets/img/ayc.png" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://www.facebook.com/ayconstructora/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ayconstructora/"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Constructora AYC</h4>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Testimonials Section -->
+  <!-- <section id="testimonials" class="testimonials section">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+          <h3>Clientes que confiaron en nosotros </h3>
+          <p>
+           
+          </p>
+        </div>
+
+        
+
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="swiper">
+            
+            <div class="swiper-wrapper">
+
+             
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                      Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> 
+
+              <div class="swiper-slide">
+                
+                <div class="container swiper">
+                  <swiper [config]="config">
+                    <ng-template swiperSlide *ngFor="let slide of slides">
+                      <img [src]="slide.image" alt="foto" />
+                    </ng-template>
+                  </swiper>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                      minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Matt Brandon</h3>
+                      <h4>Freelancer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                      velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                      veniam.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                      enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                      cillum quid.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- Recent Posts Section -->
+  <!-- <section id="recent-posts" class="recent-posts section">
+  
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+  
+      <div class="container">
+  
+        <div class="row gy-4">
+  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+  
+              <div class="post-img">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+              </div>
+  
+              <p class="post-category">Politics</p>
+  
+              <h2 class="title">
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+              </h2>
+  
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Maria Doe</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                  </p>
+                </div>
+              </div>
+  
+            </article>
+          </div>
+  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+  
+              <div class="post-img">
+                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+  
+              <p class="post-category">Sports</p>
+  
+              <h2 class="title">
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+  
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+  
+            </article>
+          </div>
+  
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+  
+              <div class="post-img">
+                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+  
+              <p class="post-category">Entertainment</p>
+  
+              <h2 class="title">
+                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+              </h2>
+  
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mark Dower</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                  </p>
+                </div>
+              </div>
+  
+            </article>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section> -->
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" >
+      <h2>Contacto</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" >
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6">
+
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-item">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Direccion</h3>
+                <hr>
+
+                <p>Carrera 20 #13-35</p>
+                <p>Manizales/Caldas</p>
+
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item">
+                <i class="bi bi-telephone"></i>
+                <h3>Llámanos</h3>
+                <p>+57 3207820809</p>
+                <p>+57 3108223945</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <h3>Correo</h3>
+                <p>{{correo}}</p>
+
+              </div>
+            </div><!-- End Info Item -->
+
+            <!-- <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horarios de apertura</h3>
+                  <p>Lunes - Viernes</p>
+                  <p>9:00AM - 05:00PM</p>
+                </div>
+              </div> -->
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" class="php-email-form">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
+              </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Correo" required="">
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+
+                <button style="background-color: #0166d6;" type="submit">Enviar</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer position-relative fondofooter">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          
+            <img src="../../assets/img/logoAIC.png" alt="">
+            <!-- <img src="../../assets/img/Logo-Oficial.png" alt=""> -->
+          
+
+        </a>
+        <br>
+        <p></p>
+        <div class="social-links d-flex mt-6">
+
+          <a href="https://www.facebook.com/profile.php?id=61559604615183"><i style="color: black;" class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/agroincafe?igsh=NXNrNG5lZG02eDBi"><i style="color: black;" class="bi bi-instagram"></i></a>
+          <a href="/tratamiento-datos"><i style="color: black;" class="bi bi-file-earmark-font"></i></a>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-4 footer-links">
+          <h4 class="titleHeader"> <b>Nuestro portafolio</b></h4>
+          <h4 class="titleHeader">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</h4>
+          <ul >
+            <li><a href="/detalles?nombre=Plantas electricas">Plantas electricas</a></li>
+            <li><a href="/construccion?nombre=Equipos de construción">Equipos de construción</a></li>
+            <li><a href="/detalles?nombre=Equipo de presion constante">Equipos de presion constante</a></li>
+            <li><a href="/detalles?nombre=Equipos contraincendios UL/FM">Equipos contraincendios UL/FM</a></li>
+            <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Diseño e instalación de redes contraincendios</a></li>
+          </ul>
+        </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+          <h4 class="titleHeader"> <b> Nuestro sitio web</b></h4>
+          <h4 class="titleHeader">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</h4>
+          <ul>
+            <li><a href="/quienes-somos">Quienes somos</a></li>
+            <li><a href="#portfolio">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+      <!-- <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Estamos en</h4>
+          <h4>-------------------</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>infoexample.com</span></p>
+        </div> -->
+
+    </div>
+  </div>
+
+  <!-- <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+  
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+
+</footer>

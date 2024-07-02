@@ -1,0 +1,186 @@
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="../../assets/img/Logo-Oficial.png" alt="">
+      <!-- <h1 class="sitename">LOGO DE LA EMPRESA</h1><span>.</span> -->
+
+
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#inicio" class="">Inicio</a></li>
+        <li><a href="/quienes-somos" class="">Quienes somos</a></li>
+        <!-- <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li> -->
+        <!-- <li><a href="#portfolio">Productos</a></li> -->
+        <!-- <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="blog.html">Blog</a></li> -->
+        <li class="dropdown has-dropdown"><a href="#portfolio"><span>Productos</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown has-dropdown"><a href=""><span>Equipos</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li ><a href="/detalles?nombre=Equipo de presion constante">De presion constante</a></li> 
+                <li><a href="/detalles?nombre=Equipos contraincendios UL/FM">Contraincendios UL/FM</a></li>
+                <li><a href="/construccion?nombre=Equipos de construción">De construción</a></li>
+              </ul>
+            </li>
+            <li class="dropdown has-dropdown"><a href="#"><span>Diseño y fabricación</span> <i
+                  class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Redes contraincendios</a></li>
+              </ul>
+            </li>
+            <li><a href="/detalles?nombre=Plantas electricas">Plantas electricas</a></li>
+            
+
+          </ul>
+        </li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <!-- <a class="btn-getstarted" href="index.html#about">Empezar</a> -->
+
+
+  </div>
+</header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<div class="degrade">
+
+
+    <div id="features" class="features section degrade">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>{{detalleProducto[0].nombre}}</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+
+            <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+                <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                    <img [src]="detalleProducto[0].imgPrincipal" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center flex-column">
+
+                    <br>
+                    <p align="justify" class="parrafo">
+                        {{detalleProducto[0].descripcion}}
+                    </p>
+
+                </div>
+
+                <div class="col-lg-12 d-flex justify-content-center flex-column">
+
+                    <br>
+                    <p align="justify" class="parrafo">
+                        {{detalleProducto[0].descripcion2}}
+                    </p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <br>
+
+    <div class="container section-title">
+        <h2>Equipos</h2>
+    </div>
+
+
+    <div class="container swiper">
+        <swiper [config]="config">
+            <ng-template swiperSlide *ngFor="let slide of detalleProducto[0].imgs">
+                <img [src]="slide" alt="foto" />
+            </ng-template>
+        </swiper>
+    </div>
+
+
+
+</div>
+
+<footer id="footer" class="footer position-relative fondofooter">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          
+            <img src="../../assets/img/logoAIC.png" alt="">
+            <!-- <img src="../../assets/img/Logo-Oficial.png" alt=""> -->
+          
+
+        </a>
+        <br>
+        <p></p>
+        <div class="social-links d-flex mt-6">
+
+          <a href="https://www.facebook.com/profile.php?id=61559604615183"><i style="color: black;" class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/agroincafe?igsh=NXNrNG5lZG02eDBi"><i style="color: black;" class="bi bi-instagram"></i></a>
+          <a href="/tratamiento-datos"><i style="color: black;" class="bi bi-file-earmark-font"></i></a>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-4 footer-links">
+          <h4 class="titleHeader"> <b>Nuestro portafolio</b></h4>
+          <h4 class="titleHeader">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</h4>
+          <ul >
+            <li><a href="/detalles?nombre=Plantas electricas">Plantas electricas</a></li>
+            <li><a href="/construccion?nombre=Equipos de construción">Equipos de construción</a></li>
+            <li><a href="/detalles?nombre=Equipo de presion constante">Equipos de presion constante</a></li>
+            <li><a href="/detalles?nombre=Equipos contraincendios UL/FM">Equipos contraincendios UL/FM</a></li>
+            <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Diseño e instalación de redes contraincendios</a></li>
+          </ul>
+        </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+          <h4 class="titleHeader"> <b> Nuestro sitio web</b></h4>
+          <h4 class="titleHeader">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</h4>
+          <ul>
+            <li><a href="/quienes-somos">Quienes somos</a></li>
+            <li><a href="#portfolio">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+      <!-- <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Estamos en</h4>
+          <h4>-------------------</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>infoexample.com</span></p>
+        </div> -->
+
+    </div>
+  </div>
+
+  <!-- <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+  
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+
+</footer>

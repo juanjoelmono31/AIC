@@ -1,0 +1,25 @@
+.degrade {
+    /* background: rgb(255 255 255); 
+    background: linear-gradient(180deg, rgb(246, 100, 100) 0%, rgb(255 255 255) 35%, rgb(255, 255, 255) 100%); */
+
+    background-image: url("../../assets/img/Fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+    
+    
+}
+
+.swiper img {
+    border-radius: var(--bs-border-radius) !important;
+    /* width: 100% !important; */
+    width: 100%     ;
+    /* display: block !important;
+    padding: 0px;
+    margin: 0px; */
+    padding: 20px 70px;
+    align-self: center;
+ 
+
+}
+

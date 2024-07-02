@@ -1,0 +1,51 @@
+.boton-flotante {
+    position: fixed;
+    z-index: 10;
+    bottom: 300px;
+    /* Ajusta según tu preferencia */
+    left: 5px;
+    /* Ajusta según tu preferencia */
+    background-color: #E84545;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    /* Agrega estilos adicionales según sea necesario */
+}
+
+.likedin {
+    bottom: 400px;
+    /* Ajusta según tu preferencia */
+
+}
+
+.twitter {
+    bottom: 350px;
+}
+
+
+.swiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.swiper img {
+    border-radius: var(--bs-border-radius) !important;
+    /* width: 100% !important; */
+    width: 100%     ;
+    /* display: block !important;
+    padding: 0px;
+    margin: 0px; */
+    padding: 20px 70px;
+    align-self: center;
+ 
+
+}
