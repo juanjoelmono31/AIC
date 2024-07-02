@@ -1,6 +1,4 @@
-.degrade {
-    /* background: rgb(255 255 255); 
-    background: linear-gradient(180deg, rgb(246, 100, 100) 0%, rgb(255 255 255) 35%, rgb(255, 255, 255) 100%); */
+/* .degrade {
 
     background-image: url("../../assets/img/Fondo4.jpg");
     background-repeat: no-repeat;
@@ -8,7 +6,7 @@
     opacity: 1;
     
     
-}
+} */
 
 .swiper img {
     border-radius: var(--bs-border-radius) !important;
