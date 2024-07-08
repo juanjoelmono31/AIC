@@ -65,15 +65,15 @@ export class InicioComponent {
   ];
 
   title = 'propuesta';
-  correo = 'inversionaic@gmail.com'
-  mensaje = 'Hola, un gusto atenderte, somos AIC INGENIERIA, en que te podemos asesorar? '
+  correo = 'gerencia@aicingenieria.co'
+  mensaje = 'Hola, estoy interesado en alguno de sus productos'
 
   constructor(public router: Router) {
 
   }
 
   sendWhatsapp() {
-    window.open(`https://api.whatsapp.com/send?phone=+573128502119&text=${this.mensaje}`)
+    window.open(`https://api.whatsapp.com/send?phone=+573207820809&text=${this.mensaje}`)
   }
 
   detalle(nombre: string){
