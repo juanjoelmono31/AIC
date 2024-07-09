@@ -15,42 +15,9 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 })
 export class EqpoPresionComponent {
 
-  detalleProducto: any = [];
-  producto: any;
-  nombreProducto = '';
 
-  config: SwiperOptions = {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
-    //navigation: true,
-    autoplay: {
-      delay: 2800
-    },
-    //pagination: { clickable: true },
-    //scrollbar: { draggable: true },
-
-  };
-
-  constructor(public servicio_productos: ProductosService, private route: ActivatedRoute) {
-
-    this.route.queryParams
-      .subscribe((params: any) => {
-        console.log(params);
-        this.nombreProducto = params.nombre
-      });
-
-    this.producto = this.servicio_productos.listProductos();
-
-    for (let index = 0; index < this.producto.length; index++) {
-
-      const producto = this.producto[index].nombre;
-
-      if (this.nombreProducto === producto) {
-        console.log("Aca viene el producto ", this.producto[index])
-        this.detalleProducto.push(this.producto[index])
-      }
-    }
-    console.log(this.detalleProducto)
+  constructor() {
+   
+    
   }
 }

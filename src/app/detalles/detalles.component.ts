@@ -22,12 +22,10 @@ export class DetallesComponent {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 50,
-    //navigation: true,
     autoplay: {
       delay: 2800
     },
-    //pagination: { clickable: true },
-    //scrollbar: { draggable: true },
+
 
   };
 
@@ -35,7 +33,7 @@ export class DetallesComponent {
 
     this.route.queryParams
       .subscribe((params: any) => {
-        console.log(params);
+        
         this.nombreProducto = params.nombre
       });
 
@@ -46,10 +44,10 @@ export class DetallesComponent {
       const producto = this.producto[index].nombre;
 
       if (this.nombreProducto === producto) {
-        console.log("Aca viene el producto ", this.producto[index])
+        
         this.detalleProducto.push(this.producto[index])
       }
     }
-    console.log(this.detalleProducto)
+    
   }
 }

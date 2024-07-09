@@ -37,7 +37,7 @@ export class ConstruccionComponent {
 
     this.route.queryParams
       .subscribe((params: any) => {
-        console.log(params);
+        
         this.nombreProducto = params.nombre
       });
 
@@ -48,11 +48,11 @@ export class ConstruccionComponent {
       const producto = this.producto[index].nombre;
 
       if (this.nombreProducto === producto) {
-        console.log("Aca viene el producto ", this.producto[index])
+        
         this.detalleProducto.push(this.producto[index])
       }
     }
-    console.log(this.detalleProducto)
+    
   }
 
 }
