@@ -5,11 +5,11 @@
   <title>AiC Ingenieria</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="../src/assets/img/AIC.png">
+  <!-- <link rel="icon" type="image/png" href="../src/assets/img/AIC.png"> -->
 
 
 <!-- Favicons -->
-<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/favicon.jpeg" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 <link
   rel="stylesheet"
@@ -31,6 +31,7 @@
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -70,5 +71,26 @@
   
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // jQuery para manejar submenús en dispositivos móviles
+    $(document).ready(function() {
+      $('.dropdown-submenu .dropdown-toggle').on('click', function(e) {
+        if (!$(this).next().hasClass('show')) {
+          $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+          $('.dropdown-submenu .dropdown-menu').removeClass('show');
+        });
+
+        return false;
+      });
+    });
+  </script>
 </body>
 </html>
