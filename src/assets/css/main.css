@@ -25,7 +25,7 @@
   --default-color-rgb: 33, 37, 41;
   --heading-color: #32353a;
   --heading-color-rgb: 50, 53, 58;
-  --accent-color: #e84545;
+  --accent-color: #0166d6;
   --accent-color-rgb: 232, 69, 69;
   --contrast-color: #ffffff;
   --contrast-color-rgb: 255, 255, 255;
@@ -34,9 +34,9 @@
 /* Nav Menu Colors */
 :root {
   --nav-color: #3a3939;
-  --nav-hover-color: #e84545;
+  --nav-hover-color: #0166d6;
   --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: #e84545;
+  --nav-dropdown-hover-color: #0166d6;
   --nav-dropdown-background-color: #ffffff;
 }
 
@@ -245,7 +245,7 @@ h6 {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--nav-color);
+    color: #0166d6;
   }
 
   .navmenu .dropdown ul a i {
@@ -281,7 +281,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #0166d6;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
