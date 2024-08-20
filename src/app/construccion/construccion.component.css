@@ -32,3 +32,41 @@
     color: #e6e6e6;
     background-color:#323232 ;
 }
+
+
+.image-stack img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+/* Opcional: Ajusta el contenedor para el diseño móvil */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        /* Opcionalmente, puedes ajustar el diseño para pantallas más pequeñas */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+}
+
+
+.swiper img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+/* Ajustes para el contenedor Swiper */
+.container.swiper {
+    overflow: hidden; /* Asegura que no haya desbordamiento del contenedor */
+    position: relative; /* Posiciona el contenedor correctamente */
+}
+
+/* Opcional: Ajuste del Swiper en diferentes tamaños de pantalla */
+@media (max-width: 767px) {
+    .swiper-slide {
+        /* Asegura que el contenido se ajuste en pantallas pequeñas */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
