@@ -18,16 +18,30 @@ import { HeaderComponent } from '../header/header.component';
 export class InicioComponent {
 
   config: SwiperOptions = {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
-    //navigation: true,
+    slidesPerView: 1, // Muestra una diapositiva a la vez
+    spaceBetween: 10, // Espacio entre las diapositivas
+    pagination: { clickable: true }, // Permite clic en la paginación
+    navigation: true, // Agrega controles de navegación
+    loop: true, // Permite que el carrusel sea infinito
     autoplay: {
-      delay: 1800
+      delay: 3000, // Intervalo de reproducción automática
+      disableOnInteraction: false, // Reanuda la reproducción automática después de la interacción
     },
-    //pagination: { clickable: true },
-    //scrollbar: { draggable: true },
-    
+    breakpoints: {
+      // Configura los puntos de interrupción para el diseño en diferentes tamaños de pantalla
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
   };
 
   slides = [
