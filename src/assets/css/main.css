@@ -91,8 +91,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 120px;
-  /* margin-right: 8px; */
+  /* max-height: 120px; */
+  margin-left: 10px
 }
 
 .header .logo h1 {
@@ -129,6 +129,7 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+    display: none;
   }
 
   .header .btn-getstarted {
@@ -423,8 +424,8 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 150px;
-  margin-right: 6px;
+  max-height: 138px;
+  margin-right: 0px;
 }
 
 .footer .footer-about .logo span {
@@ -1116,7 +1117,7 @@ section,
 }
 
 .features .features-item .features-img-bg img {
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
   display: block;
   width: 100%;

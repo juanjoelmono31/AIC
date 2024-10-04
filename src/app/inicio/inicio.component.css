@@ -30,25 +30,20 @@
 }
 
 
-.swiper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
+
 
 .swiper img {
     border-radius: var(--bs-border-radius) !important;
-    /* width: 100% !important; */
-    width: 100%     ;
-    /* display: block !important;
-    padding: 0px;
-    margin: 0px; */
-    padding: 20px 70px;
-    align-self: center;
- 
-
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 100px; /* Ajusta la altura máxima de la imagen */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se comporte como bloque */
+    margin: 0 auto; /* Centra la imagen dentro del slide */
 }
+
+
+
 
 .clientes {
     font-size: 40px;
@@ -89,6 +84,33 @@
     display: block;
   }
 
+  /* @media (max-width: 768px) {
+    .logo-oficial, .logo-bristol {
+      display: none;
+    }
+}
+ */
+
+ @media (max-width: 768px) { /* Cambia el valor según el tamaño del breakpoint */
+    .logo-bristol {
+      display: none; /* Ocultar esta imagen en dispositivos móviles */
+    }
+  
+    .logo-oficial {
+      display: block; /* Asegurar que esta imagen se muestre */
+    }
+  }
+  
+  /* En vista de escritorio ambas imágenes se muestran */
+  @media (min-width: 769px) {
+    .logo-oficial {
+      display: block;
+    }
+  
+    .logo-bristol {
+      display: block;
+    }
+} 
 
 
 

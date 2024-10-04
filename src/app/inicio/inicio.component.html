@@ -2,7 +2,9 @@
   <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
     <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img style="margin-left: 70px;" src="../../assets/img/Logo-Oficial.png" alt="">
+      <!-- Logo principal -->
+      <img class="logo-oficial" style="margin-left: 70px; max-height: 110px;" src="../../assets/img/Logo-Oficial.png" alt="Logo Oficial">
+      <img class="logo-bristol" style="margin-left: 70px; max-height: 170px" src="../../assets/img/BRISTOL-sin.png" alt="Logo Bristol">
     </a>
 
     <nav id="navmenu" class="navmenu">
@@ -18,11 +20,9 @@
                 <li><a href="/construccion?nombre=Equipos de construción">De construción</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="#"><span>Diseño y fabricación</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Diseño y fabricación</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Redes contraincendios</a>
-                </li>
+                <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Redes contraincendios</a></li>
               </ul>
             </li>
             <li><a href="/detalles?nombre=Plantas electricas">Plantas electricas</a></li>
@@ -71,15 +71,14 @@
     <div class="container section-title">
       <h2>Nuestras marcas aliadas</h2>
     </div>
-
-  
+    
     <div class="container swiper">
       <swiper [config]="config">
         <ng-template swiperSlide *ngFor="let slide of slides">
           <img [src]="slide.image" alt="foto" />
         </ng-template>
       </swiper>
-  </div>
+    </div>
   </section>
   <br>
   <br>
@@ -132,7 +131,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="margin-top: -42px;">
             <img src="../assets/img/suction_diesel.jpg" class="img-fluid" alt=""
               (click)="detalle('Equipos contraincendios UL/FM')">
             <div class="portfolio-info">
@@ -153,7 +152,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="margin-top: 55px;">
             <img src="../assets/img/planta_potabilizadora.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Diseño y fabricación</h4>
@@ -163,7 +162,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="margin-top: -20px;">
             <img src="../assets/img/Maquinaria.png" class="img-fluid" alt=""
               (click)="construccion('Equipos de construción')">
             <div class="portfolio-info">
@@ -396,25 +395,22 @@
 </main>
 
 <footer id="footer" class="footer position-relative fondofooter">
-
   <div class="container footer-top">
     <div class="row gy-4">
-      <div class="col-lg-5 col-md-12 footer-about">
-        <a href="index.html" class="logo d-flex align-items-center">
-
-          <img src="../../assets/img/Logo-Oficial.png" alt="">
-
-
-        </a>
-        <br>
-        <p></p>
-        <div class="social-links d-flex mt-6">
-
+      <div class="col-lg-5 col-md-6 footer-about">
+        <div class="d-flex justify-content-start align-items-center">
+          <a href="index.html" class="logo">
+            <img src="../../assets/img/Logo-Oficial.png" alt="" >
+          </a>
+          <a href="index.html" class="logo ms-2"> <!-- ms-3 agrega margen entre las imágenes -->
+            <img src="../../assets/img/BRISTOL-sin.png" alt="">
+          </a>
+        </div>
+        <div class="social-links d-flex mt-4">
           <a href="https://www.facebook.com/profile.php?id=61559604615183"><i style="color: white;"
               class="bi bi-facebook"></i></a>
           <a href="https://www.instagram.com/aicingenieria/"><i style="color: white;" class="bi bi-instagram"></i></a>
           <a href="/tratamiento-datos"><i style="color: white;" class="bi bi-file-earmark-font"></i></a>
-
         </div>
       </div>
 
@@ -426,8 +422,7 @@
           <li><a href="/construccion?nombre=Equipos de construción">Equipos de construción</a></li>
           <li><a href="/detalles?nombre=Equipo de presion constante">Equipos de presion constante</a></li>
           <li><a href="/detalles?nombre=Equipos contraincendios UL/FM">Equipos contraincendios UL/FM</a></li>
-          <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Diseño e instalación de redes
-              contraincendios</a></li>
+          <li><a href="/detalles?nombre=Diseño e instalación de redes contraincendios">Diseño e instalación de redes contraincendios</a></li>
         </ul>
       </div>
 

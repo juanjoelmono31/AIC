@@ -28,25 +28,33 @@ export class InicioComponent {
       disableOnInteraction: false, // Reanuda la reproducción automática después de la interacción
     },
     breakpoints: {
-      // Configura los puntos de interrupción para el diseño en diferentes tamaños de pantalla
-      640: {
+      320: { // Para móviles más pequeños
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: { // Pantallas móviles medianas
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      768: {
+      768: { // Tablets
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1024: {
+      1024: { // Pantallas grandes
         slidesPerView: 3,
         spaceBetween: 40,
       },
     },
+    updateOnWindowResize: true, // Asegura que se actualice en cambios de tamaño
   };
 
   slides = [
     {
       image: '../assets/img/nfpa-logo.png',
+    },
+    {
+      
+      image: '../assets/img/BRISTOL.png',
     },
     {
       
@@ -75,6 +83,9 @@ export class InicioComponent {
     {
       
       image: '../assets/img/rp_logo_url.png',
+    },
+    {
+      image: '../assets/img/tornatech.jpg',
     },
   ];
 

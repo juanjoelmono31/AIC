@@ -32,3 +32,24 @@
     color: #e6e6e6;
     background-color:#323232 ;
 }
+
+@media (max-width: 768px) { /* Cambia el valor según el tamaño del breakpoint */
+    .logo-bristol {
+      display: none; /* Ocultar esta imagen en dispositivos móviles */
+    }
+  
+    .logo-oficial {
+      display: block; /* Asegurar que esta imagen se muestre */
+    }
+  }
+  
+  /* En vista de escritorio ambas imágenes se muestran */
+  @media (min-width: 769px) {
+    .logo-oficial {
+      display: block;
+    }
+  
+    .logo-bristol {
+      display: block;
+    }
+} 

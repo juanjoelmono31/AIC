@@ -41,10 +41,10 @@ export class ProductosService {
     nombre: 'Equipos contraincendios UL/FM',
     descripcion: 'Nos destacamos como representantes autorizados de las mejores marcas de bombas contra incendios, certificadas bajo la normativa NFPA 20, garantizando equipos que cumplen con los más altos estándares internacionales de seguridad y tecnología. Nuestra gama de productos incluye bombas de reconocidas marcas, y cumplimiento con las certificaciones UL y FM.',
     descripcion2: 'Ofrecemos soluciones integrales en sistemas de protección contra incendios, desde la consultoría y diseño hasta la instalación y mantenimiento, cubriendo todo el territorio colombiano. Nuestro equipo técnico está compuesto por especialistas altamente capacitados, listos para brindar asesoramiento experto y personalizado, asegurando que cada sistema se adapte a las necesidades específicas de nuestros clientes y cumpla con todas las regulaciones nacionales pertinentes. ',
-    imgPrincipal: '../assets/img/suction_diesel.jpg',
+    imgPrincipal: '../assets/img/Fire-Pump.jpg',
     imgs: [
 
-      '../assets/img/contraincendios1.jpg',
+      '../assets/img/BombalistadaBristol_grande.jpg',
       '../assets/img/contraincendios2.jpg',
       '../assets/img/contraincendios3.png',
       '../assets/img/contraincendios4.png'
@@ -54,13 +54,11 @@ export class ProductosService {
     nombre: 'Diseño e instalación de redes contraincendios',
     descripcion: 'En nuestra empresa, nos especializamos en la instalación de sistemas de protección contra incendios, asegurando la seguridad y el cumplimiento de las normativas vigentes. Nuestros servicios incluyen la implementación de redes contra incendios diseñadas según el Reglamento de Instalaciones de Protección Contra Incendios (RIPCI) y la NFPA 20, Este reglamento es esencial para garantizar que todos los componentes y procedimientos de nuestras instalaciones sean eficaces y estén en línea con las exigencias legales más recientes. ',
     descripcion2: 'Nuestro equipo de profesionales está altamente cualificado y posee la formación requerida para llevar a cabo la instalación y el mantenimiento de estos sistemas, proporcionando así un entorno seguro tanto para propiedades como para personas.',
-    imgPrincipal: '../assets/img/bomba-carcasa-partida-motor-diesel.jpg',
+    imgPrincipal: '../assets/img/curso_instalaciones.jpg',
     imgs: [
 
-      '../assets/img/redes1.png',
-      '../assets/img/redes2.png',
-      '../assets/img/redes3.png',
-      '../assets/img/redes4.png'
+      '../assets/img/alarm.png',
+      '../assets/img/sprinclers.png',
     ]
   },
   {
